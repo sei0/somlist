@@ -12,16 +12,42 @@
       }
       body {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+        width: 420px;
+      }
+      .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin-left: 16px;
+      }
+      h1 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0;
       }
 
+      h2 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #8d8d8d;
+        margin-top: 8px;
+      }
       .expert-list {
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: stretch;
         margin-top: 24px;
-        width: 420px;
       }
       .list-item {
         display: flex;
@@ -73,41 +99,48 @@
     </style>
   </head>
   <body>
-    <div class="expert-list">
-      <div class="list-item">
-        <div class="profile">
-          <img class="avatar" src="images/cat.jpg" />
-          <div class="info">
-            <div class="name">솜선생</div>
-            <div class="bio">귀여워요!💖</div>
-          </div>
-        </div>
-        <div class="chevron">
-          <img src="images/chevron.png" />
-        </div>
+    <div class="container">
+      <div class="heading">
+        <h1>솜 리스트</h1>
+        <h2>솜이는 귀여워요</h2>
       </div>
-      <div class="list-item">
-        <div class="profile">
-          <img class="avatar" src="images/cat.jpg" />
-          <div class="info">
-            <div class="name">솜선생</div>
-            <div class="bio">재밌어요!👀</div>
+
+      <div class="expert-list">
+        <div class="list-item">
+          <div class="profile">
+            <img class="avatar" src="images/cat.jpg" />
+            <div class="info">
+              <div class="name">솜선생</div>
+              <div class="bio">귀여워요!💖</div>
+            </div>
+          </div>
+          <div class="chevron">
+            <img src="images/chevron.png" />
           </div>
         </div>
-        <div class="chevron">
-          <img src="images/chevron.png" />
-        </div>
-      </div>
-      <div class="list-item">
-        <div class="profile">
-          <img class="avatar" src="images/cat.jpg" />
-          <div class="info">
-            <div class="name">솜선생</div>
-            <div class="bio">깜찍해요!🐰</div>
+        <div class="list-item">
+          <div class="profile">
+            <img class="avatar" src="images/cat.jpg" />
+            <div class="info">
+              <div class="name">솜선생</div>
+              <div class="bio">재밌어요!👀</div>
+            </div>
+          </div>
+          <div class="chevron">
+            <img src="images/chevron.png" />
           </div>
         </div>
-        <div class="chevron">
-          <img src="images/chevron.png" />
+        <div class="list-item">
+          <div class="profile">
+            <img class="avatar" src="images/cat.jpg" />
+            <div class="info">
+              <div class="name">솜선생</div>
+              <div class="bio">깜찍해요!🐰</div>
+            </div>
+          </div>
+          <div class="chevron">
+            <img src="images/chevron.png" />
+          </div>
         </div>
       </div>
     </div>
