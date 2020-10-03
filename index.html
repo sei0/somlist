@@ -33,6 +33,7 @@
         justify-content: start;
         align-items: flex-start;
         margin-left: 16px;
+        margin-top: 16px;
       }
       h1 {
         font-size: 22px;
@@ -100,6 +101,19 @@
         width: 100%;
         height: 100%;
       }
+
+      .photo-list {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+
+        flex-flow: row wrap;
+      }
+      .cat-photo {
+        width: 124px;
+        height: 124px;
+        margin: 8px;
+      }
     </style>
   </head>
   <body>
@@ -156,6 +170,22 @@
             <img src="images/chevron.png" />
           </div>
         </a>
+      </div>
+
+      <div class="heading">
+        <h1>사진</h1>
+        <h2>사진</h2>
+      </div>
+
+      <div class="photo-list">
+        <img class="cat-photo" src="images/catphoto-1.jpg" />
+        <img class="cat-photo" src="images/catphoto-2.jpg" />
+        <img class="cat-photo" src="images/catphoto-3.jpg" />
+        <img class="cat-photo" src="images/catphoto-4.jpg" />
+        <img class="cat-photo" src="images/catphoto-5.jpg" />
+        <img class="cat-photo" src="images/catphoto-6.jpg" />
+        <img class="cat-photo" src="images/catphoto-7.jpg" />
+        <img class="cat-photo" src="images/catphoto-8.jpg" />
       </div>
     </div>
   </body>
